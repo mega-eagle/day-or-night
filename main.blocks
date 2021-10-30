@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="{;NqF=eF7U-a}oPQ2Xe^">lightLevel</variable></variables><block type="pxt-on-start" id="LjAE#_A{zic_0v:k=s3C" x="-10" y="-203"><statement name="HANDLER"><block type="device_print_message" id="k@YpUfR~B|T5UC3d,UN:"><value name="text"><shadow type="text" id="6!#;ry[rz`~ta`r^+1+P"><field name="TEXT">Hi!</field></shadow></value><next><block type="basic_show_icon" id="$[]Q|ohT/eDr,FgUK.@#"><field name="i">IconNames.Yes</field></block></next></block></statement></block><block type="device_forever" id="WW0SMDG(:xatVZ#rj+A_" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="bcU[2:?Fie@,l.9AQa))"><field name="VAR" id="{;NqF=eF7U-a}oPQ2Xe^">lightLevel</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id=".Y:$mcq*AqWrYg]o]6z|"/></value><next><block type="controls_if" id="(fcGZADMr5}nXfQva`p;"><mutation elseif="1" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="6|hEEyeq^_KTWu`VJxm}"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="G9it,G?~i!l+mS*nBl16"/></value><value name="B"><shadow type="math_number" id="^%bpbC]hLXqqay5R5!c!"><field name="NUM">127</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="i~Iw2+*:|Zt+Kq@OZ)f+"><field name="LEDS">`
+        . # # # . 
+        # # # . . 
+        # # . . . 
+        # # # . . 
+        . # # # .
+        `</field></block></statement><value name="IF1"><block type="logic_compare" id="Bl)acn/WA4SC/O=]V.RG"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="i}1kRmq7tM8L?C@iyw@x"/></value><value name="B"><shadow type="math_number" id="(OBp~Q;$mv]sz5%0?C2#"><field name="NUM">128</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="6ly#NaEa_7ZuCzX{pJ9l"><field name="LEDS">`
+        # . # . # 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        # . # . #
+        `</field></block></statement></block></next></block></statement></block></xml>
